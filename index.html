@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive Generative Art - A mesmerizing landscape with dynamic layers and customizable themes">
+    <meta name="author" content="Digital Canvas Gallery">
+    <meta property="og:title" content="Generative Art - Insta Frame">
+    <meta property="og:description" content="Interactive generative landscape art with multiple themes and export options">
+    <meta property="og:type" content="website">
+    <title>Generative Art - Insta Frame</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="ui-layer">
+        
+        <!-- Frame Switcher -->
+        <div>
+            <div class="panel-label">Format</div>
+            <div class="panel">
+                <button class="frame-btn active" id="btn-vertical" title="9:16 Vertical Format">9:16 Vertical</button>
+                <button class="frame-btn" id="btn-cinematic" title="16:9 Cinematic Format">16:9 Cinematic</button>
+            </div>
+        </div>
+
+        <!-- Theme Switcher -->
+        <div>
+            <div class="panel-label">Palette</div>
+            <div class="panel">
+                <div class="theme-btn active" id="theme-midnight" style="background: #222;" title="Midnight"></div>
+                <div class="theme-btn" id="theme-ocean" style="background: #006994;" title="Ocean"></div>
+                <div class="theme-btn" id="theme-dunes" style="background: #C2B280;" title="Sand Dunes"></div>
+                <div class="theme-btn" id="theme-forest" style="background: #2E8B57;" title="Forest"></div>
+            </div>
+        </div>
+
+        <button class="action-btn" id="btn-pause">Pause / Play</button>
+        <button class="action-btn" id="btn-record">Record Video</button>
+    </div>
+
+    <canvas id="canvas"></canvas>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
